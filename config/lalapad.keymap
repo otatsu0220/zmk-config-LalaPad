@@ -184,14 +184,18 @@
         ToArchive: ToArchive {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_SHIFT &kp LEFT_CONTROL &kp KP_NUMBER_1>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL &kp LEFT_SHIFT &kp KP_NUMBER_1>;
+
             label = "TOARCHIVE";
         };
 
         ToNextMail: ToNextMail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL &kp GREATER_THAN>;
+            bindings = <&kp LCTRL &kp GREATER_THAN>, <&macro_press>;
+
             label = "TONEXTMAIL";
         };
 
@@ -200,6 +204,20 @@
             #binding-cells = <0>;
             bindings = <&kp LCTRL &kp LESS_THAN>;
             label = "TOPREVIOUSMAIL";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        NextMail {
+            bindings = <&none>;
+            key-positions = <36 33>;
+        };
+
+        PreviousMail {
+            bindings = <&none>;
+            key-positions = <36 32>;
         };
     };
 
