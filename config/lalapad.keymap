@@ -34,14 +34,6 @@
             <&zip_temp_layer MOUSE_R_LAYER 500>;
     };
 
-    highspeedmode {
-        layers = <TERTIARY_LAYER>;
-        input-processors =
-            <&zip_xy_transform (INPUT_TRANSFORM_XY_SWAP | INPUT_TRANSFORM_X_INVERT | INPUT_TRANSFORM_Y_INVERT)>,
-            <&zip_xy_scaler 6 2>,
-            <&zip_temp_layer MOUSE_L_LAYER 500>;
-    };
-
     scroller {
         layers = <SCROLL_R_LAYER>;
         input-processors =
