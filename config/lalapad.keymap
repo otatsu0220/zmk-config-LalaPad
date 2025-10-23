@@ -184,44 +184,37 @@
         ToArchive: ToArchive {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press
-                    &kp LCTRL
-                    &kp LSHIFT
-                    &kp N1
-                &macro_release
-                    &kp LCTRL
-                    &kp LSHIFT
-                    &kp N1
-            >;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LSHIFT &kp N1>,
+                <&macro_release>,
+                <&kp LCTRL &kp LSHIFT &kp N1>,
+                <&macro_press>;
+
             label = "TOARCHIVE";
         };
 
         ToNextMail: ToNextMail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press
-                    &kp LCTRL
-                    &kp GREATER_THAN
-                &macro_release
-                    &kp LCTRL
-                    &kp GREATER_THAN
-　　　　　　　>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp GREATER_THAN>,
+                <&macro_release>,
+                <&kp LCTRL &kp GREATER_THAN>;
+
             label = "TONEXTMAIL";
         };
 
         ToPreviousMail: ToPreviousMail {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <
-                &macro_press
-                    &kp LCTRL
-                    &kp LESS_THAN
-                &macro_release
-                    &kp LCTRL
-                    &kp LESS_THAN
-　　　　　　　>;
+            bindings =
+                <&macro_press>,
+                <&kp LCTRL &kp LESS_THAN>,
+                <&macro_release>,
+                <&kp LCTRL &kp LESS_THAN>;
+
             label = "TOPREVIOUSMAIL";
         };
     };
