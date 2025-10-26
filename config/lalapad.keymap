@@ -256,10 +256,10 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp L         &kp U               &kp RIGHT_BRACKET         &kp BACKSLASH             &kp F                   &kp W          &kp R            &kp Y       &kp P     &mt EQUAL MINUS
-&kp TAB    &kp E         &kp I         &mt LEFT_BRACKET A  &kp O                     &mt AMPERSAND AT_SIGN     &kp K                   &kp T          &kp N            &kp S       &kp H     &mt2 SQT RBKT
-&kp LSHFT  &kp Z         &kp X         &kp C               &kp V                     &kp SLASH                 &kp G                   &kp D          &kp M            &kp J       &kp B     &kp BSLH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE           &lt SECONDARY_LAYER EXCL  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN  &mt SEMICOLON SINGLE_QUOTE
+&kp ESC    &kp Q         &kp L         &kp U               &kp RIGHT_BRACKET         &kp BACKSLASH             &kp F                   &kp W          &kp R            &kp Y       &kp P       &mt EQUAL MINUS
+&kp TAB    &kp E         &kp I         &mt LEFT_BRACKET A  &kp O                     &mt AMPERSAND AT_SIGN     &kp K                   &kp T          &kp N            &kp S       &kp H       &mt2 SQT RBKT
+&kp LSHFT  &kp Z         &kp X         &kp C               &kp V                     &kp SLASH                 &kp G                   &kp D          &kp M            &kp J       &kp B       &kp BSLH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE           &lt SECONDARY_LAYER EXCL  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp COMMA   &kp PERIOD  &mt SEMICOLON SINGLE_QUOTE
                          &allow_end    &allow_pagedown     &allow_home               &allow_pageup             &allow_pageup           &allow_home    &allow_pagedown  &allow_end
             >;
         };
