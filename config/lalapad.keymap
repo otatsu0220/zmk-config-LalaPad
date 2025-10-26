@@ -225,6 +225,13 @@
 
             label = "TOPREVIOUSMAIL";
         };
+
+        at: at {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "AT";
+        };
     };
 
     combos {
@@ -249,11 +256,11 @@
             sensor-bindings = <&scroll_down_up>, <&scroll_up_down>;
 
             bindings = <
-&kp ESC    &kp Q         &kp L         &kp U            &kp R                &kp T                     &kp F                   &kp W          &kp R            &kp Y       &kp P           &mt EQUAL MINUS
-&kp TAB    &kp E         &kp I         &kp A            &kp O                &kp G                     &kp K                   &kp T          &kp N            &kp S       &kp H           &mt2 SQT RBKT
-&kp LSHFT  &kp Z         &kp X         &kp C            &kp V                &kp B                     &kp G                   &kp D          &kp M            &kp J       &kp B           &kp BSLH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE        &mo SECONDARY_LAYER  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN        &kp RIGHT
-                         &allow_end    &allow_pagedown  &allow_home          &allow_pageup             &allow_pageup           &allow_home    &allow_pagedown  &allow_end
+&kp ESC    &kp Q         &kp L         &kp U               &kp RIGHT_BRACKET         &kp BACKSLASH             &kp F                   &kp W          &kp R            &kp Y       &kp P     &mt EQUAL MINUS
+&kp TAB    &kp E         &kp I         &mt LEFT_BRACKET A  &kp O                     &mt AMPERSAND AT_SIGN     &kp K                   &kp T          &kp N            &kp S       &kp H     &mt2 SQT RBKT
+&kp LSHFT  &kp Z         &kp X         &kp C               &kp V                     &kp SLASH                 &kp G                   &kp D          &kp M            &kp J       &kp B     &kp BSLH
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE           &lt SECONDARY_LAYER EXCL  &lt TERTIARY_LAYER LANG2  &lt SYSTEM_LAYER LANG1  &kp BACKSPACE  &kp RET          &kp LEFT    &kp DOWN  &mt SEMICOLON SINGLE_QUOTE
+                         &allow_end    &allow_pagedown     &allow_home               &allow_pageup             &allow_pageup           &allow_home    &allow_pagedown  &allow_end
             >;
         };
 
@@ -286,11 +293,11 @@
             sensor-bindings = <&scroll_down_up>, <&volume_up_down>;
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
-&trans  &trans  &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
-&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-&trans  &trans  &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
-                &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
+&trans  &kp AT_SIGN  &trans  &trans  &trans       &trans      &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3    &bt BT_SEL 4
+&trans  &trans       &trans  &trans  &bootloader  &sys_reset  &sys_reset    &bootloader   &studio_unlock  &bt BT_CLR    &bt BT_CLR_ALL  &trans
+&trans  &trans       &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
+&trans  &trans       &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans        &trans          &trans
+                     &trans  &trans  &trans       &trans      &trans        &trans        &trans          &trans
             >;
         };
 
